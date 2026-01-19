@@ -1,21 +1,21 @@
 {
   "files": {
-    "main.css": "/Ruslan-Nastan/static/css/main.9566fd70.css",
-    "main.js": "/Ruslan-Nastan/static/js/main.298f3dd6.js",
-    "static/js/453.39b785a3.chunk.js": "/Ruslan-Nastan/static/js/453.39b785a3.chunk.js",
-    "static/media/g3.JPG": "/Ruslan-Nastan/static/media/g3.992c23d1de584bd52e54.JPG",
-    "static/media/g9.JPG": "/Ruslan-Nastan/static/media/g9.8d0f0bc0bc76a79d2121.JPG",
-    "static/media/g4.JPG": "/Ruslan-Nastan/static/media/g4.718571317dac94678f9c.JPG",
-    "static/media/couple.jpg": "/Ruslan-Nastan/static/media/couple.70e4356720d020ed1b75.jpg",
-    "static/media/g5.JPG": "/Ruslan-Nastan/static/media/g5.80137f9dae82cd99db32.JPG",
-    "static/media/g7.JPG": "/Ruslan-Nastan/static/media/g7.af92343bcb5c5b3325b8.JPG",
-    "index.html": "/Ruslan-Nastan/index.html",
-    "main.9566fd70.css.map": "/Ruslan-Nastan/static/css/main.9566fd70.css.map",
-    "main.298f3dd6.js.map": "/Ruslan-Nastan/static/js/main.298f3dd6.js.map",
-    "453.39b785a3.chunk.js.map": "/Ruslan-Nastan/static/js/453.39b785a3.chunk.js.map"
+    "main.css": "/Ruslan-Nestan/static/css/main.59bb4841.css",
+    "main.js": "/Ruslan-Nestan/static/js/main.4f90e631.js",
+    "static/js/453.39b785a3.chunk.js": "/Ruslan-Nestan/static/js/453.39b785a3.chunk.js",
+    "static/media/g3.JPG": "/Ruslan-Nestan/static/media/g3.992c23d1de584bd52e54.JPG",
+    "static/media/g9.JPG": "/Ruslan-Nestan/static/media/g9.8d0f0bc0bc76a79d2121.JPG",
+    "static/media/g4.JPG": "/Ruslan-Nestan/static/media/g4.718571317dac94678f9c.JPG",
+    "static/media/couple.jpg": "/Ruslan-Nestan/static/media/couple.70e4356720d020ed1b75.jpg",
+    "static/media/g5.JPG": "/Ruslan-Nestan/static/media/g5.80137f9dae82cd99db32.JPG",
+    "static/media/g7.JPG": "/Ruslan-Nestan/static/media/g7.af92343bcb5c5b3325b8.JPG",
+    "index.html": "/Ruslan-Nestan/index.html",
+    "main.59bb4841.css.map": "/Ruslan-Nestan/static/css/main.59bb4841.css.map",
+    "main.4f90e631.js.map": "/Ruslan-Nestan/static/js/main.4f90e631.js.map",
+    "453.39b785a3.chunk.js.map": "/Ruslan-Nestan/static/js/453.39b785a3.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.9566fd70.css",
-    "static/js/main.298f3dd6.js"
+    "static/css/main.59bb4841.css",
+    "static/js/main.4f90e631.js"
   ]
 }
