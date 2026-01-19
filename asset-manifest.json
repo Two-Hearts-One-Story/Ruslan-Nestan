@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/Ruslan-Nestan/static/css/main.04c1a67d.css",
+    "main.css": "/Ruslan-Nestan/static/css/main.545956f8.css",
     "main.js": "/Ruslan-Nestan/static/js/main.80caaf39.js",
     "static/js/453.39b785a3.chunk.js": "/Ruslan-Nestan/static/js/453.39b785a3.chunk.js",
     "static/media/g5.JPEG": "/Ruslan-Nestan/static/media/g5.5f9b6828745cb487449d.JPEG",
@@ -10,12 +10,12 @@
     "static/media/z1.jpg": "/Ruslan-Nestan/static/media/z1.ebc24b223b462b2ca758.jpg",
     "static/media/g7.JPG": "/Ruslan-Nestan/static/media/g7.af92343bcb5c5b3325b8.JPG",
     "index.html": "/Ruslan-Nestan/index.html",
-    "main.04c1a67d.css.map": "/Ruslan-Nestan/static/css/main.04c1a67d.css.map",
+    "main.545956f8.css.map": "/Ruslan-Nestan/static/css/main.545956f8.css.map",
     "main.80caaf39.js.map": "/Ruslan-Nestan/static/js/main.80caaf39.js.map",
     "453.39b785a3.chunk.js.map": "/Ruslan-Nestan/static/js/453.39b785a3.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.04c1a67d.css",
+    "static/css/main.545956f8.css",
     "static/js/main.80caaf39.js"
   ]
 }
