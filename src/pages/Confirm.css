@@ -1,0 +1,168 @@
+.anketa-page {
+  min-height: 60dvh;
+  background: #ffffff;
+  display: flex;
+  justify-content: center;
+  padding: 0px 12px;
+  box-sizing: border-box;
+}
+
+.anketa-inner {
+  width: min(420px, 100%);
+  padding: 0px 0px 2px;
+  box-sizing: border-box;
+}
+
+.anketa-title {
+  margin: 0 0 16px;
+  text-align: center;
+  font-family: "Georgia", "Times New Roman", serif;
+  font-weight: 500;
+  font-size: 46px;
+  letter-spacing: 1px;
+  color: #111;
+}
+
+.anketa-subtitle {
+  margin: 0 0 28px;
+  text-align: center;
+  font-family: "Italiana", serif;
+  font-size: 16px;
+  line-height: 1.45;
+  color: rgba(0, 0, 0, 0.28);
+}
+
+.anketa-form {
+  margin: 0;
+}
+
+.anketa-block {
+  margin: 0 0 10px;
+}
+
+.anketa-label {
+  font-family: "Italiana", serif;
+  font-size: 20px;
+  font-weight: 500;
+  color: #111;
+  margin-bottom: 6px;
+}
+
+
+.anketa-input {
+  width: 100%;
+  border: none;
+  border-bottom: 2px solid rgba(0, 0, 0, 0.55);
+  padding: 10px 0 8px;
+  font-size: 18px;
+  outline: none;
+  background: transparent;
+  color: #111;
+  box-sizing: border-box;
+}
+
+.anketa-input:focus {
+  border-bottom-color: rgba(0, 0, 0, 0.85);
+}
+
+
+
+.anketa-question {
+  font-family: "Italiana", serif;
+  font-size: 20px;
+  font-weight: 500;
+  color: #111;
+  margin-bottom: 6px;
+}
+
+.anketa-choice {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  margin: 12px 0;
+  cursor: pointer;
+  user-select: none;
+}
+
+.anketa-choiceText {
+  font-family: "Italiana", serif;
+  font-size: 18px;
+  color: rgba(0, 0, 0, 0.35);
+}
+
+.anketa-choiceInput {
+  position: absolute;
+  opacity: 0;
+  pointer-events: none;
+}
+
+.anketa-box {
+  width: 22px;
+  height: 22px;
+  border: 2px solid rgba(0, 0, 0, 0.55);
+  box-sizing: border-box;
+  background: transparent;
+  flex: 0 0 22px;
+}
+
+.anketa-choiceInput:checked + .anketa-box {
+  background: rgba(0, 0, 0, 0.12);
+  box-shadow: inset 0 0 0 4px #fff;
+}
+
+.anketa-choiceInput:checked + .anketa-box + .anketa-choiceText {
+  color: rgba(0, 0, 0, 0.55);
+}
+
+.anketa-submit {
+  margin-top: 18px;
+  background: #0b0b0b;
+  color: #fff;
+  border: none;
+  height: 46px;
+  padding: 0 26px;
+  font-size: 18px;
+  text-transform: lowercase;
+  cursor: pointer;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.anketa-submit:active {
+  transform: translateY(1px);
+}
+
+.anketa-sent {
+  margin-top: 10px;
+  text-align: center;
+  color: rgba(0,0,0,0.45);
+  font-family: "Italiana", serif;
+}
+
+.anketa-sentTitle {
+  font-size: 22px;
+  font-weight: 500;
+  color: rgba(0,0,0,0.65);
+  margin-bottom: 6px;
+}
+
+.anketa-sentText {
+  font-size: 16px;
+}
+
+
+@media (max-width: 360px) {
+  .anketa-inner {
+    padding: 30px 14px 24px;
+  }
+
+  .anketa-title {
+    font-size: 42px;
+  }
+
+  .anketa-footer {
+    font-size: 50px;
+    margin-top: 58px;
+  }
+}

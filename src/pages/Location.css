@@ -1,0 +1,107 @@
+@import url("https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500&family=Cormorant+Garamond:wght@300;400&display=swap");
+
+.location {
+  position: relative;  
+  background: #fff;
+  padding: 32px 0;
+  overflow: hidden;  
+}
+
+/* ОДНА РАМКА */
+.location-frame {
+  width: calc(100% - 36px);
+  margin: 0 auto;
+  border: 1px solid rgba(0, 0, 0, 0.35);
+  text-align: center;
+  background: #fff;
+  position: relative; 
+}
+
+/* ВЕРХ */
+.location-title {
+  margin-top: 54px;
+  font-family: "Playfair Display", serif;
+  font-size: 34px;
+  letter-spacing: 6px;
+}
+
+.location-address {
+  margin: 10px 0 10px;
+  font-family: "Cormorant Garamond", serif;
+  font-size: 18px;
+  color: #666;
+  line-height: 1.5;
+}
+
+.location-place {
+  margin-bottom: 64px;
+  font-family: "Playfair Display", serif;
+  font-size: 20px;
+  letter-spacing: 4px;
+}
+
+/* КНОПКА */
+.location-mapBtn {
+  display: inline-block;
+  margin-bottom: 68px;
+  margin-top: 50px;
+  padding: 4px 25px;
+  background: #3b3b3b;
+  color: #fff;
+  text-decoration: none;
+  margin-left: 140px;
+  font-family: "Cormorant Garamond", serif;
+  font-size: 13px;
+  letter-spacing: 1px;
+
+  border: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+/* НИЗ — ТЁМНЫЙ БЛОК ВНУТРИ ТОЙ ЖЕ РАМКИ */
+.location-timeBlock {
+  background: #2b2b2b;
+  color: #fff;
+  padding: 48px 0 56px;
+
+  margin-left: -22px;
+  margin-right: -22px;
+  width: calc(100% + 44px);
+}
+
+.location-timeLabel {
+  font-family: "Cormorant Garamond", serif;
+  font-size: 27px;
+  letter-spacing: 1px;
+  opacity: 0.7;
+  margin-bottom: 4px;
+  margin-left: 145px;
+}
+
+.location-time {
+  font-family: "Playfair Display", serif;
+  font-size: 22px;
+  letter-spacing: 2px;
+  margin-left: 150px;
+}
+
+/* МОБИЛКА */
+@media (max-width: 380px) {
+  .location-title { font-size: 30px; }
+  .location-time { font-size: 46px; }
+}
+
+
+/* НАЛОЖЕННОЕ ФОТО */
+.location-overlay {
+  position: absolute;
+  left: -18px;
+  bottom: 40px;
+
+  width: 160px;
+  height: 285px;
+  object-fit: cover;
+
+  z-index: 5;
+  pointer-events: none;
+}
+

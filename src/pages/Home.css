@@ -1,0 +1,205 @@
+@import url("https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500&family=Great+Vibes&display=swap");
+
+.hero {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  background: url("../assets/couple.jpg") center/cover no-repeat;
+  overflow: hidden;
+
+  /* как на 2 фото */
+  filter: grayscale(1) contrast(1.08) brightness(0.95);
+}
+
+/* затемнение НЕ должно убивать свет в центре */
+.hero__overlay {
+  position: absolute;
+  inset: 0;
+  z-index: 1;
+
+  /* меньше тотальной тьмы, больше “сцены” */
+  background:
+    radial-gradient(circle at 50% 45%,
+      rgba(0,0,0,0.15) 0%,
+      rgba(0,0,0,0.55) 55%,
+      rgba(0,0,0,0.85) 100%
+    );
+}
+
+/* слой эффектов */
+.hero__effects {
+  position: absolute;
+  inset: 0;
+  z-index: 0;
+  pointer-events: none;
+}
+
+/* 1) “веер” лучей (как на 2 фото) */
+.hero__effects::before {
+  content: "";
+  position: absolute;
+
+  /* двигай top/left чтобы лучи были за головой */
+  left: 50%;
+  top: 44%;
+  width: 1400px;
+  height: 1400px;
+  transform: translate(-50%, -50%);
+
+  /* лучи: conic + размытие */
+  background: conic-gradient(
+    from 205deg,
+    transparent 0deg,
+    rgba(255,255,255,0.20) 10deg,
+    transparent 22deg,
+    rgba(255,255,255,0.12) 45deg,
+    transparent 65deg,
+    rgba(255,255,255,0.18) 92deg,
+    transparent 120deg,
+    rgba(255,255,255,0.10) 160deg,
+    transparent 360deg
+  );
+
+  /* делаем их мягкими, как прожектор */
+  filter: blur(2px);
+  opacity: 0.95;
+
+  /* чтобы свет реально “светил”, а не просто белел */
+  mix-blend-mode: screen;
+}
+
+/* 2) “горячая точка” света в центре (пучок прожектора) + bokeh огоньки */
+.hero__effects::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+
+  background:
+    /* яркое пятно прожектора */
+    radial-gradient(circle at 50% 44%,
+      rgba(255,255,255,0.22) 0%,
+      rgba(255,255,255,0.08) 18%,
+      transparent 55%
+    ),
+
+    /* огоньки слева (как на 2 фото) */
+    radial-gradient(circle at 23% 52%, rgba(255,255,255,0.55) 0 10px, transparent 12px),
+    radial-gradient(circle at 30% 53%, rgba(255,255,255,0.35) 0 8px, transparent 10px),
+    radial-gradient(circle at 38% 52%, rgba(255,255,255,0.45) 0 9px, transparent 11px),
+    radial-gradient(circle at 46% 52%, rgba(255,255,255,0.25) 0 7px, transparent 9px),
+
+    /* лёгкая дымка */
+    radial-gradient(circle at 50% 46%, rgba(255,255,255,0.10), transparent 60%);
+
+  filter: blur(1px);
+  opacity: 0.9;
+  mix-blend-mode: screen;
+}
+
+/* контент */
+.hero__content {
+  position: relative;
+  z-index: 2;
+  height: 100%;
+  color: #fff;
+}
+
+/* love */
+.hero__top {
+  position: absolute;
+  top: 70px;
+  left: 50%;
+  transform: translateX(-50%);
+  font-family: "Playfair Display", serif;
+  font-size: 18px;
+  letter-spacing: 1px;
+  opacity: 0.9;
+}
+
+/* дата по центру */
+.hero__middle {
+  position: absolute;
+  top: 45%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+.hero__date {
+  font-family: "Playfair Display", serif;
+  font-size: 26px;
+  letter-spacing: 2px;
+  opacity: 0.9;
+  display: inline-flex;
+  gap: 14px;
+  align-items: center;
+
+  /* чтобы на ярком пятне не терялась */
+  text-shadow: 0 2px 12px rgba(0,0,0,0.65);
+}
+
+.hero__slashes {
+  font-size: 30px;
+  opacity: 0.85;
+}
+
+/* имена снизу */
+.hero__bottom {
+  position: absolute;
+  left: 50%;
+  top: 48%;
+  bottom: 70px;
+  transform: translateX(-50%);
+  width: 100%;
+  text-align: center;
+  padding: 0 16px;
+}
+
+.hero__names {
+  font-family: "Great Vibes", cursive;
+  font-weight: 400;
+  font-size: 78px;
+  line-height: 1.05;
+  margin: 0;
+  text-shadow: 0 2px 18px rgba(0,0,0,0.65);
+}
+
+/* стрелка */
+.hero__scroll {
+  margin-top: 170px;
+}
+
+.hero__scroll span {
+  display: block;
+  width: 22px;
+  height: 36px;
+  border: 1.5px solid rgba(255,255,255,0.7);
+  border-radius: 20px;
+  margin: 0 auto;
+  position: relative;
+}
+
+.hero__scroll span::after {
+  content: "";
+  position: absolute;
+  top: 8px;
+  left: 50%;
+  width: 4px;
+  height: 8px;
+  background: white;
+  border-radius: 2px;
+  transform: translateX(-50%);
+  animation: scroll 1.6s infinite;
+}
+
+@keyframes scroll {
+  0% { opacity: 0; top: 6px; }
+  50% { opacity: 1; }
+  100% { opacity: 0; top: 18px; }
+}
+
+@media (max-width: 768px) {
+  .hero__names { font-size: 52px; }
+  .hero__date { font-size: 18px;  }
+  .hero__top { top: 30px; }
+}

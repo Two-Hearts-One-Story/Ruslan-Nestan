@@ -1,0 +1,102 @@
+@import url("https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500&family=Cormorant+Garamond:wght@300;400&display=swap");
+
+.program {
+  background: #fff;
+  text-align: center;
+  padding: 40px 18px 70px;
+}
+
+/* Заголовок как в рефе: большой, с воздухом */
+.program-title {
+  font-family: "Playfair Display", serif;
+  font-size: 44px;
+  letter-spacing: 1px;
+  margin: 0 0 56px;
+  color: #222;
+}
+
+/* список — просто вертикальная колонка с большими интервалами */
+.program-list {
+  max-width: 520px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  gap: 54px; /* много воздуха как на фото */
+}
+
+/* элемент — без карточек/теней */
+.program-item {
+  padding: 0;
+  background: transparent;
+  border: 0;
+  box-shadow: none;
+}
+
+/* строка "16:00 — ВЕЛКОМ" */
+.program-main {
+  display: inline-flex;
+  align-items: baseline;
+  justify-content: center;
+  gap: 12px;
+
+ font-family: "Italiana", serif;
+  font-size: 30px;
+  letter-spacing: 1px;
+  color: #222;
+}
+
+.program-time {
+  font-weight: 400;
+}
+
+.program-dash {
+  color: rgba(0, 0, 0, 0.35);
+}
+
+.program-name {
+  font-weight: 500;
+  text-transform: uppercase;
+}
+
+/* описание — серое, меньше, как подстрочник */
+.program-desc {
+  margin: 3px auto 0;
+  max-width: 420px;
+
+  font-family: "Cormorant Garamond", serif;
+  font-size: 18px;
+  line-height: 1.6;
+  color: rgba(0, 0, 0, 0.45);
+}
+
+/* мобилка — уменьшить, но стиль тот же */
+@media (max-width: 480px) {
+  .program-title {
+    font-size: 37px;
+    margin-bottom: 40px;
+  }
+
+  .program-main {
+    font-size: 22px;
+    gap: 1px;
+  }
+
+  .program-desc {
+    font-size: 16px;
+    max-width: 320px;
+  }
+
+  .program-list {
+    gap: 36px;
+  }
+}
+
+@media (max-width: 360px) {
+  .program-title {
+    font-size: 26px;
+  }
+
+  .program-main {
+    font-size: 24px;
+  }
+}

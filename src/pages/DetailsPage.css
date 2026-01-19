@@ -1,0 +1,106 @@
+@import url("https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500&family=Cormorant+Garamond:wght@300;400&display=swap");
+
+.wish {
+  background: #fff;
+  padding: 28px 14px 60px;
+  display: flex;
+  justify-content: center;
+}
+
+.wish-card {
+  width: min(560px, 100%);
+  background: #fff;
+  padding: 24px 10px 10px;
+  box-sizing: border-box;
+}
+
+/* Заголовок */
+.wish-title {
+  margin: 8px 0 18px;
+  text-align: center;
+  font-family: "Playfair Display", serif;
+  font-size: 30px;
+  letter-spacing: 3px;
+}
+
+/* 2 колонки как на рефе */
+.wish-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 18px;
+  align-items: start;
+  padding: 6px 6px 18px;
+}
+
+/* текст */
+.wish-text {
+  margin: 0;
+  font-family: "Cormorant Garamond", serif;
+  font-size: 18px;
+  line-height: 1.75;
+  color: rgba(0,0,0,0.55);
+}
+
+/* выравнивания как на фото */
+.wish-text--left {
+  text-align: left;
+  padding: 6px 6px 0 6px;
+}
+
+.wish-text--right {
+  text-align: right;
+  padding: 10px 8px 0 8px;
+}
+
+/* фото-блок */
+.wish-photo {
+  width: 100%;
+  background: #f4f4f4;
+  overflow: hidden;
+  border: 1px solid rgba(0,0,0,0.10);
+}
+
+.wish-photo img {
+  width: 100%;
+  height: 100%;
+  display: block;
+  object-fit: cover;
+  filter: grayscale(100%) contrast(1.05);
+}
+
+/* размеры фото — чтобы совпало с композицией */
+.wish-photo--top {
+  height: 260px;
+  margin: 8px 0 14px;
+}
+
+.wish-photo--bottom {
+  height: 240px;
+  margin: 22px 0 0;
+}
+
+/* мобилка: сохраняем 2 колонки (как в сторис) */
+@media (max-width: 420px) {
+  .wish-title {
+    font-size: 30px;
+    letter-spacing: 5px;
+  }
+
+  .wish-grid {
+    gap: 14px;
+  }
+
+  .wish-text {
+    font-size: 16px;
+    line-height: 1.7;
+  }
+
+  .wish-photo--top {
+    height: 220px;
+  }
+
+  .wish-photo--bottom {
+    height: 210px;
+    margin-top: 18px;
+  }
+}

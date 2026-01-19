@@ -1,0 +1,109 @@
+/* Страница (мобилка) */
+.dc-page {
+  min-height: 100dvh;
+  display: flex;
+  justify-content: center;
+  background: #ffffff;
+  padding: 14px 10px;
+  box-sizing: border-box;
+}
+
+/* Контейнер, чтобы выглядело как "постер" */
+.dc-card {
+  width: min(420px, 100%);
+  background: #fff;
+}
+
+/* Верхний блок: слева вертикальный текст, справа фото */
+.dc-top {
+  display: flex;
+  align-items: stretch;
+  gap: 0;
+}
+
+/* Белая колонка */
+.dc-side {
+  width: 88px;                 /* под мобилку похоже на макет */
+  background: #ffffff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 10px 0;
+  box-sizing: border-box;
+}
+
+/* Вертикальный текст как в примере */
+.dc-vertical {
+  font-family: "Georgia", "Times New Roman", serif;
+  font-size: 60px;
+  letter-spacing: 5px;
+  color: #0c0c0c;
+  writing-mode: vertical-rl;
+  text-orientation: mixed;
+  transform: rotate(180deg); /* чтобы читалось сверху вниз как в макете */
+  line-height: 1;
+  user-select: none;
+}
+
+/* Обёртка фото */
+.dc-photoWrap {
+  flex: 1;
+  background: #ffffff;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Фото — прямоугольник как на картинке */
+.dc-photo {
+  width: 100%;
+  height: 470px;               /* фикс высоты под мобилку */
+  object-fit: cover;
+  display: block;
+  background: #111;            /* если картинка не загрузится */
+}
+
+/* Низ: текст + палитра */
+.dc-bottom {
+  padding: 22px 18px 10px;
+  box-sizing: border-box;
+}
+
+.dc-text {
+  margin: 0 0 18px;
+  text-align: center;
+  font-size: 16px;
+  line-height: 1.35;
+  color: rgba(0, 0, 0, 0.28);  /* бледно-серый как на макете */
+font-family: "Italiana", serif;
+}
+
+/* Палитра */
+.dc-swatches {
+  display: flex;
+  justify-content: center;
+  gap: 14px;
+  padding-bottom: 6px;
+}
+
+.dc-swatch {
+  width: 42px;
+  height: 42px;
+  border-radius: 3px;
+  box-sizing: border-box;
+}
+
+/* Цвета (примерно как на картинке) */
+.dc-swatches .s1 { background: #ffffff; border: 1px solid rgba(0,0,0,0.14); }
+.dc-swatches .s2 { background: #cbcbcb; }
+.dc-swatches .s3 { background: #ebbaaf; }
+.dc-swatches .s4 { background: #0b330b; }
+.dc-swatches .s5 { background: #1b094a; }
+.dc-swatches .s6 { background: #0a0a0a; }
+
+/* Чуть адаптации под очень узкие экраны */
+@media (max-width: 360px) {
+  .dc-side { width: 78px; }
+  .dc-vertical { font-size: 40px; }
+  .dc-photo { height: 480px; }
+  .dc-swatch { width: 38px; height: 38px; }
+}

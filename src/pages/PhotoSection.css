@@ -1,0 +1,120 @@
+@import url("https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500&family=Cormorant+Garamond:wght@300;400&display=swap");
+
+.photo-section {
+  width: 100%;
+  height: 100vh;
+  min-height: 100svh;
+
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+
+  position: relative;
+  overflow: hidden;
+}
+
+/* мягкий общий слой */
+.photo-section__overlay {
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.08);
+}
+
+/* сильнее затемняем низ, как на рефе */
+.photo-section__fade {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(
+    to top,
+    rgba(0, 0, 0, 0.55) 0%,
+    rgba(0, 0, 0, 0.28) 35%,
+    rgba(0, 0, 0, 0.00) 70%
+  );
+}
+
+/* блок с таймером снизу */
+.countdown-overlay {
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 48px;
+
+  text-align: center;
+  padding: 0 18px;
+  color: rgba(255, 255, 255, 0.92);
+
+  z-index: 5;
+}
+
+/* "ДО ВСТРЕЧИ ЧЕРЕЗ" */
+.countdown-title {
+  font-family: "Playfair Display", serif;
+  font-size: 30px;
+  letter-spacing: 2px;
+  margin-bottom: 22px;
+
+  color: rgba(255, 255, 255, 0.85);
+  text-transform: uppercase;
+}
+
+/* 4 колонки */
+.countdown-row {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 14px;
+  max-width: 720px;
+  margin: 0 auto;
+}
+
+/* цифра + подпись */
+.countdown-cell {
+  display: grid;
+  place-items: center;
+  gap: 10px;
+}
+
+/* крупные числа как на рефе */
+.countdown-num {
+  font-family: "Playfair Display", serif;
+  font-size: 56px;
+  letter-spacing: 2px;
+  line-height: 1;
+
+  /* лёгкое “стекло” */
+  text-shadow: 0 10px 28px rgba(0,0,0,0.55);
+}
+
+/* подписи */
+.countdown-label {
+  font-family: "Cormorant Garamond", serif;
+  font-size: 16px;
+  letter-spacing: 5px;
+  text-transform: uppercase;
+
+  color: rgba(255, 255, 255, 0.70);
+}
+
+/* мобилка */
+@media (max-width: 420px) {
+  .countdown-title {
+    font-size: 22px;
+    margin-bottom: 18px;
+  }
+
+  .countdown-row {
+    gap: 10px;
+  }
+
+  .countdown-num {
+    font-size: 40px;
+  }
+
+  .countdown-label {
+    font-size: 12px;
+    letter-spacing: 3px;
+  }
+
+  .countdown-overlay {
+    bottom: 96px;
+  }
+}
