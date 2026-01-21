@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/Ruslan-Nestan/static/css/main.0f74b3c6.css",
-    "main.js": "/Ruslan-Nestan/static/js/main.528a80f8.js",
+    "main.css": "/Ruslan-Nestan/static/css/main.9c034ea3.css",
+    "main.js": "/Ruslan-Nestan/static/js/main.e116d0c7.js",
     "static/js/453.39b785a3.chunk.js": "/Ruslan-Nestan/static/js/453.39b785a3.chunk.js",
     "static/media/music.mp3": "/Ruslan-Nestan/static/media/music.afc51559b8b61e851062.mp3",
     "static/media/g5.JPEG": "/Ruslan-Nestan/static/media/g5.5f9b6828745cb487449d.JPEG",
@@ -11,12 +11,12 @@
     "static/media/z1.jpg": "/Ruslan-Nestan/static/media/z1.ebc24b223b462b2ca758.jpg",
     "static/media/g7.JPG": "/Ruslan-Nestan/static/media/g7.af92343bcb5c5b3325b8.JPG",
     "index.html": "/Ruslan-Nestan/index.html",
-    "main.0f74b3c6.css.map": "/Ruslan-Nestan/static/css/main.0f74b3c6.css.map",
-    "main.528a80f8.js.map": "/Ruslan-Nestan/static/js/main.528a80f8.js.map",
+    "main.9c034ea3.css.map": "/Ruslan-Nestan/static/css/main.9c034ea3.css.map",
+    "main.e116d0c7.js.map": "/Ruslan-Nestan/static/js/main.e116d0c7.js.map",
     "453.39b785a3.chunk.js.map": "/Ruslan-Nestan/static/js/453.39b785a3.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.0f74b3c6.css",
-    "static/js/main.528a80f8.js"
+    "static/css/main.9c034ea3.css",
+    "static/js/main.e116d0c7.js"
   ]
 }
